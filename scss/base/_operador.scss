@@ -1,0 +1,11 @@
+//Operadores
+$ancho-principal_img:100%;
+.cuerpo-1{ 
+    width: $ancho-principal_img;
+}
+.cuerpo-2{
+    width: $ancho-principal_img*2;
+}
+.cuerpo-3{
+    width: $ancho-principal_img -20px;
+}

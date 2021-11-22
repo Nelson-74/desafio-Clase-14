@@ -1,0 +1,17 @@
+//Mapas
+$standard: (
+    color-standard:#FFA400 ,
+    bg-standard: #B2F9FC,
+    border-standard: 15px,
+);
+$premium: (
+    color-premium:#FF0075,
+    bg-premium: #77D970,
+);
+.mi1{
+    color: map-get($premium, color-premium ) ;
+}
+.mi2 {
+    background-color: map-get($standard, bg-standard );
+}    
+

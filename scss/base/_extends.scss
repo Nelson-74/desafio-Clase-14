@@ -1,0 +1,19 @@
+//Extends
+//Placeholder %
+%touch {
+    color:blue ;
+    font-size: 25px;
+    font-style :italic;
+    font-family:$fonts;
+    text-transform: none;
+    padding: 10px;
+    margin: 20px auto; 
+}
+.congelar{
+    background-color:burlywood;
+    @extend %touch;
+}
+.cuerpo{
+    border: black solid ;
+    @extend %touch;
+}

@@ -1,0 +1,68 @@
+ //Mixin
+@mixin container ($height, $width,$position, $display, $direction, $justify){
+    height: $height;
+    width: $width;
+    position:$position;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+/* Header */
+#header{
+     //Mixin
+    @include container(10vh, 100%, fixed, flex, row,space-around );
+    top:0;
+    padding: 19px; 
+    width: 2em;
+    border: 1px solid blue;
+    background-position: top;
+    margin-left: 5px;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 66px 66px 66px66px66px66px 66px 66px ;
+    grid-template-columns: 66px 66px 66px 66px 66px 66px 66px 66px;
+}
+.logo-nav {
+    width: 2em;
+    height: 150px;
+    padding: 15px;
+    border: 10 px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3em;
+    flex-direction:row;
+    display:inline;
+}
+.menuNav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1,5em;
+    flex-direction:row ;
+  
+}
+.menuNav li {
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    padding-left: 2px;
+    list-style-position: inside;
+}
+.menuNav li:hover {
+    background-color:$color-hover;
+    color:$color-font-hover;
+    font-size: $size;
+}
+.menuNav li a {
+    text-decoration: none;
+    color: #191A19;
+    font-size: 15px;
+    font-family:$fonts;
+    font-style: italic;
+    display: flex;
+    justify-content: space-around;
+}
+.miHeader {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}

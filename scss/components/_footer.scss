@@ -1,0 +1,55 @@
+
+/* Este es footer */
+.footer  {
+    width: auto;
+    padding: 10px;
+    border-radius: 15px ;
+    border: 2px solid black;
+    font-size : 20px;
+    font-style :italic;   
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    gap: 20px;
+	flex-wrap: wrap;
+}
+
+footer section div p h3 {
+    color: rgb(46, 36, 70) ;
+    text-align: left;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: bold;
+}
+footer div ul li {
+    color: rgb(72, 4, 136);
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-7 p h3 {
+    background-color: white;
+    font-size : 20px;
+    font-style :italic;
+    font-family:$fonts;
+    text-transform: none;
+    word-spacing: normal;
+    font-weight: bold;
+    text-align: end;
+    color: black;
+    display:flex ;
+    flex-wrap:content ;
+}
+
+
+.footer-7 {
+    display: flex;
+    order: -1;
+}

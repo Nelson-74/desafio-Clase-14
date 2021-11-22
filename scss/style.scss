@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+//Variables
+@import "base/variables";
+@import "base/colors";
+@import "base/operador";
+@import "base/maps";
+@import "base/extends";
+@import "components/page";
+@import "components/header";
+@import "components/section";
+@import "components/footer";
