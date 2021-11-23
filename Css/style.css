@@ -296,15 +296,14 @@ body {
 }
 .carousel-inner .item img {
   width: 640px; 
-  height: 360px; 
+  height: 260px; 
 }
 
 .carousel-inner .item img {
   width: auto;
   height: 115px;
-  max-height: 800px;
+  max-height: 200px;
   object-fit: scale-down;
-  height: 400vh;
   width: 100%;
 }
 
