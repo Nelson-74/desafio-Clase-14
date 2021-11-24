@@ -214,11 +214,12 @@ body {
 .logo-nav {
   width: auto;
   height: 180px;
-  padding: 9px;
+  padding: 8px;
   display: flex;
   justify-content: space-around;
   margin-left: 2.5em;
   flex-direction: row;
+  align-content: space-around;
 }
 
 .menuNav {
@@ -226,6 +227,7 @@ body {
   justify-content: space-around;
   margin-left: 10em;
   flex-direction: row;
+  align-content: space-around;
 }
 
 .menuNav li {
@@ -233,7 +235,7 @@ body {
   border-radius: 6px;
   text-align: center;
   padding-left: 2px;
-  list-style-type: circle;
+  align-content: space-around;
 }
 
 .menuNav li:hover {
