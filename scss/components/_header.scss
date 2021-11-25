@@ -19,8 +19,7 @@
     margin-left: 5px;
     display: inline-block;
     display: grid;
-    grid-template-columns: 66px 66px 66px66px66px66px 66px 66px ;
-    grid-template-columns: 66px 66px 66px 66px 66px 66px 66px 66px;
+    grid-template-columns: 66px 66px 66px 66px 66px 66px 66px 66px ;
 }
 .logo-nav {
     width: 2em;
@@ -31,7 +30,7 @@
     justify-content: space-around;
     margin-left: 3em;
     flex-direction:row;
-    display:inline;
+    display:inline-block;
 }
 .menuNav {
     display: flex;
