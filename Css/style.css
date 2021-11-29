@@ -702,29 +702,6 @@ body {
   padding: 10px;
   margin: 20px auto;
 }
-
-/* Animación */
-.promo:hover {
-  animation: patina-color 6s;
-}
-
-@keyframes patina-color {
-  0% {
-    background-color: crimson;
-  }
-  15% {
-    border-radius: 50%;
-  }
-  30% {
-    width: 500px;
-  }
-  60% {
-    background-color: darkturquoise;
-  }
-  100% {
-    background-color: gold;
-  }
-}
 .semillas {
   background-color: #F3F0D7;
   color: blue;
