@@ -178,7 +178,7 @@ body {
   background-color: darkgray;
   transition: all 1.5s ease-out;
 }
-.estación {
+.estacion {
   background-color: #e4f59b;
   word-spacing: 0%;
   border: black solid;
@@ -307,7 +307,7 @@ body {
   }
 }
 
-/* Destop*/
+/* Desktop*/
 @media  screen and (min-width: 961px) {
   #miHeader {
     background-color: #F3F0D7;
@@ -480,7 +480,7 @@ body {
   }
 }
 
-/* Destop*/
+/* Desktop*/
 @media  screen and (min-width: 961px) {
   .section-1 {
     background-color: #F3F0D7;
