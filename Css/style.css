@@ -58,7 +58,7 @@ body {
   background-color: #F3F0D7;
 }
 
-.estación ul li {
+.estacion ul li {
   color: blue;
   font-size: 25px;
   font-style: italic;
@@ -683,7 +683,7 @@ body {
 }
 .promo {
   color: blue;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: none;
