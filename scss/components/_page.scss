@@ -88,18 +88,24 @@ body {
     align-items: center;
     list-style-position:left;
     list-style-type: circle;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 2fr 2fr;  
 }
 .congelar {
     background-color:burlywood;
     word-spacing:0%;
-    border: black solid ;
+    border: black ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;
     height: 20%;
     width: 20%;
-    padding: 10px;
-    margin: 20px auto;  
+    padding: 100px;
+    margin: 20px auto;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 2fr 2fr;   
 }
 
 .mi1 ,.mi2, .contener h2 {

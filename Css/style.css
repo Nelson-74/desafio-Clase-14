@@ -146,9 +146,6 @@ body {
   width: 20%;
   padding: 10px;
   margin: 20px auto;
-  display: grid;
-  grid-row: 1fr 1fr 1fr 1fr 1fr;
-  grid-column: 2fr 2fr; 
 }
 .mi1, .mi2, .contener h2 {
   background-color: burlywood;
