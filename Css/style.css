@@ -106,7 +106,7 @@ body {
   padding: 15px;
   margin: 20px auto;
   color: blue;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   word-spacing: normal;
@@ -117,21 +117,20 @@ body {
 
 .cuerpo img {
   margin: 2px;
-  align-items: center;
+  align-items: right;
 }
 
 .cuerpo h3 {
-  text-align: right;
+  text-align: left;
 }
-.congelar1, .congelar2, .congelar3, .congelar4 {
+.congelar1, .congelar2, .congelar3 {
   color: blue;
   font-size: 30px;
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: none;
-  word-spacing: normal;
   font-weight: bold;
-  align-items: center;
+  align-items: right;
   list-style-position: left;
   list-style-type: circle;
 }
@@ -147,6 +146,9 @@ body {
   width: 20%;
   padding: 10px;
   margin: 20px auto;
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 2fr 2fr; 
 }
 .mi1, .mi2, .contener h2 {
   background-color: burlywood;
