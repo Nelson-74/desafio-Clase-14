@@ -1,10 +1,14 @@
-
+@import"base/colors";
 /* Este es footer */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 .footer  {
     width: auto;
     padding: 10px;
     border-radius: 15px ;
-    border: 2px solid black;
+    border: 2px solid nth($colores, 1);
     font-size : 20px;
     font-style :italic;   
     display: flex;
@@ -43,7 +47,7 @@ footer div ul li {
     word-spacing: normal;
     font-weight: bold;
     text-align: end;
-    color: black;
+    color:nth($colores, 1);
     display:flex ;
     flex-wrap:content ;
 }

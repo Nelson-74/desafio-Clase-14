@@ -1,4 +1,8 @@
-
+@import"base/colors";
+* {
+    margin: 0px;
+    padding: 0px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -8,7 +12,7 @@ body {
 }
 
 .estación ul li {
-    color: blue;
+    color: nth($colores, 3);
     font-size : 25px;
     font-style :italic;
     font-family:$fonts;
@@ -19,7 +23,7 @@ body {
     list-style-type: circle;
 }
 .contener {
-    color: blue;
+    color:nth($colores, 3);
     font-size : 25px;
     font-style :italic;
     font-family:$fonts;
@@ -30,7 +34,7 @@ body {
     list-style-position:left;  
 }   
 .contener .mi {
-    color: blue;
+    color: nth($colores, 3);
     font-size : 25px;
     font-style :italic;
     font-family:$fonts;
@@ -41,9 +45,9 @@ body {
     list-style-type: circle;
 }
 .cuerpo {
-    background-color:burlywood;
+    background-color:nth($colores , 2);
     word-spacing:0%;
-    border: black solid ;
+    border:nth($colores , 1) solid ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;
@@ -51,7 +55,7 @@ body {
     width: 50%;
     padding: 200px;
     margin: 20px auto;   
-    color: blue;
+    color:nth($colores, 3);
     font-size : 30px;
     font-style :italic;
     font-family:$fonts;
@@ -61,7 +65,7 @@ body {
     list-style-type: circle;
 }
 .cuerpo ul li h3 {
-    color:blue;
+    color:nth($colores, 3);
     font-size: 20px;
     font-style: italic;
     font-family:$fonts;
@@ -78,7 +82,7 @@ body {
 }
 
 .congelar1, .congelar2, .congelar3, .congelar4 {
-    color: blue;
+    color: nth($colores, 3);
     font-size : 30px;
     font-style :italic;
     font-family:$fonts;
@@ -93,9 +97,9 @@ body {
     grid-column: 2fr 2fr;  
 }
 .congelar {
-    background-color:burlywood;
+    background-color:nth($colores , 2);
     word-spacing:0%;
-    border: black ;
+    border:nth($colores , 1) ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;
@@ -108,11 +112,11 @@ body {
 }
 
 .mi1 ,.mi2, .contener h2 {
-    background-color:burlywood;
+    background-color:nth($colores , 2);
     font-size : 25px;
     font-style :italic;
     word-spacing:0%;
-    border: black solid ;
+    border: nth($colores , 1) solid ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px ;
@@ -140,7 +144,7 @@ body {
 .estación {
     background-color:rgb(228, 245, 155);
     word-spacing:0%;
-    border: black solid ;
+    border:nth($colores , 1) solid ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;

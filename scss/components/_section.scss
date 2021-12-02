@@ -1,3 +1,8 @@
+@import"base/colors";
+* {
+    margin: 0px;
+    padding: 0px;
+}
  //Mixin
 @mixin boton ($padding, $border, $border-radius,$background-color, $color,$font-size, $font-style,){
     padding: $padding;
@@ -8,6 +13,7 @@
     font-size: $font-size;
     font-style: $font-style;
 }
+
 /* Esta es la segunda sección  */
 /*Carrusel de Boostrap*/
 .tales {
@@ -40,7 +46,7 @@
 .section-0 {
     padding: 12px;
     border-radius: 15px ;
-    border: 2px  black;
+    border: 2px  rgb(161, 147, 147);
     margin: 10px 12 px;
     background-color:rgb(241, 217, 172);
     background-position:bottom;
@@ -75,8 +81,8 @@
 .section-2 {
     padding: 10px;
     border-radius: 8px ;
-    border: 1px solid black;
-    color: blue;
+    border: 1px solid nth($colores , 1);
+    color: nth($colores , 3);
     font-size : 25px;
     font-style :italic;
     font-family:$fonts;
@@ -102,13 +108,13 @@
 .section-2 img {
     padding: 10px 10px 10px 10px ;
     border-radius: 10px ;
-    border: 6px solid brown;
+    border: 6px solid nth($colores , 4);
     position: left;
     width: 148%;
     height: 95%;
 }
 .section-2 .calidad  {
-    color:#3c7c7c;
+    color:nth($colores , 5);
     font-size: 17px;
     font-style: italic;
     text-align: left;
@@ -145,7 +151,7 @@
     justify-content: space-around;
 }
 .section-3 a {
-    color:indigo;
+    color:nth($colores , 6);
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -165,7 +171,7 @@
     gap: 20px;
 }
 .promo {
-    color: blue;
+    color:nth($colores , 3);
     font-size : 30px;
     font-style :italic;
     font-family:$fonts;
@@ -176,9 +182,9 @@
     list-style-type: circle;
 }
 .promo {
-    background-color:burlywood;
+    background-color: nth($colores , 2);
     word-spacing:0%;
-    border: black solid ;
+    border: nth($colores, 1) solid ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;
@@ -210,7 +216,7 @@
     
 }
 .semillas {
-    color: blue;
+    color:nth($colores, 3);
     font-size : 30px;
     font-style :italic;
     font-family:$fonts;
@@ -223,7 +229,7 @@
 .semillas {
     background-color:burlywood;
     word-spacing:0%;
-    border: black solid ;
+    border:nth($colores, 1) solid ;
     font-weight: bold;
     text-align: left;
     border-radius: 6px;
@@ -234,7 +240,7 @@
 }
 
 .boton-3 div h4 {
-    color: blue ;
+    color: nth($colores, 3);
     font-style: italic;
     text-align: left;
     font-size: 30px;
@@ -267,7 +273,7 @@
 }
 /* Pseudo clase */
 .boton-1:hover {
-    background-color: blue;
+    background-color:nth($colores , 3);
     color: aliceblue;
     padding: 25px;
 }
