@@ -1,18 +1,710 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import"base/colors";
- *   |        ^^^^^^^^^^^^^
- *   '
- *   scss\components\_header.scss 1:8  @import
- *   scss\style.scss 9:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import\"base/colors\";\d\a   \2502         ^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_header.scss 1:8  @import\a   scss\\style.scss 9:9               root stylesheet";
+@charset "UTF-8";
+.cuerpo-1 {
+  width: 100%;
 }
+
+.cuerpo-2 {
+  width: 200%;
+}
+
+.cuerpo-3 {
+  width: 100% -20px;
+}
+
+.mi1 {
+  color: #FF0075;
+}
+
+.mi2 {
+  background-color: #B2F9FC;
+}
+
+.promo, .estacion, .cuerpo, .congelar {
+  background-color: burlywood;
+  word-spacing: 0%;
+  border: black;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  padding: 40px;
+  margin: 20px 20px;
+  color: blue;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  align-items: left;
+}
+
+.promo-1, .promo-2, .promo-3, .promo-4, .estacion-1, .estacion-2, .estacion-3 {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  align-items: center;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.congelar {
+  background-color: burlywood;
+}
+
+.cuerpo {
+  border: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Color de fondo*/
+body {
+  background-color: #F3F0D7;
+}
+
+.estación ul li {
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.contener {
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  border-radius: 2px;
+  list-style-position: left;
+}
+
+.contener .mi {
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.cuerpo {
+  background-color: burlywood;
+  word-spacing: 0%;
+  border: black solid;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 50%;
+  width: 50%;
+  padding: 200px;
+  margin: 20px auto;
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.cuerpo ul li h3 {
+  color: blue;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.cuerpo img {
+  margin: 2px;
+  align-items: center;
+}
+
+.cuerpo h3 {
+  text-align: right;
+}
+
+.congelar1, .congelar2, .congelar3, .congelar4 {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  align-items: center;
+  list-style-position: left;
+  list-style-type: circle;
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 2fr 2fr;
+}
+
+.congelar {
+  background-color: burlywood;
+  word-spacing: 0%;
+  border: black;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  margin: 20px auto;
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 2fr 2fr;
+}
+
+.mi1, .mi2, .contener h2 {
+  background-color: burlywood;
+  font-size: 25px;
+  font-style: italic;
+  word-spacing: 0%;
+  border: black solid;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.mi1 {
+  background-color: greenyellow;
+  transition: all 1.5s ease-in;
+}
+
+.mi2 {
+  background-color: darkblue;
+  transition: all 1.5s ease-in-out;
+}
+
+.contener h2 {
+  background-color: darkgray;
+  transition: all 1.5s ease-out;
+}
+
+.contener:hover h2, .contener:hover .mi1, .contener:hover .mi2 {
+  transform: translateX(80px);
+}
+
+.estación {
+  background-color: #e4f59b;
+  word-spacing: 0%;
+  border: black solid;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  padding: 15px;
+  margin: 20px auto;
+  transition: all 2s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header */
+#header {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 0;
+  padding: 19px;
+  width: 2em;
+  border: 1px solid blue;
+  background-position: top;
+  margin-left: 5px;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 66px 66px 66px 66px 66px 66px 66px 66px;
+}
+
+.logo-nav {
+  width: 2em;
+  height: 150px;
+  padding: 15px;
+  border: 10 px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 3em;
+  flex-direction: row;
+  display: inline-block;
+}
+
+.menuNav {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1, 5em;
+  flex-direction: row;
+}
+
+.menuNav li {
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  padding-left: 2px;
+  list-style-position: inside;
+}
+
+.menuNav li:hover {
+  background-color: #B000B9;
+  color: white;
+  font-size: 25px;
+}
+
+.menuNav li a {
+  text-decoration: none;
+  color: #191A19;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+}
+
+.miHeader {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Esta es la segunda sección  */
+/*Carrusel de Boostrap*/
+.tales {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 800px;
+}
+
+.carousel-inner .item img {
+  width: auto;
+  height: 115px;
+  max-height: 800px;
+  object-fit: scale-down;
+  height: 400vh;
+  width: 100%;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block !important;
+}
+
+.carousel-item img {
+  max-height: 450px;
+}
+
+@media (max-width: 688px) {
+  .carousel-item img {
+    max-height: 246px;
+  }
+}
+.section-0 {
+  padding: 12px;
+  border-radius: 15px;
+  border: 2px #a19393;
+  margin: 10px 12 px;
+  background-color: #f1d9ac;
+  background-position: bottom;
+}
+
+/* Esta es la tercer sección */
+.section-1 {
+  /* declaro flexbox */
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton-1 {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: burlywood;
+  color: blue;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.boton-2 {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: burlywood;
+  color: blue;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 5px;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+}
+
+/*Esta es la cuarta sección*/
+.section-2 {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* Declaro flexbox */
+  display: flex;
+  justify-content: space-around;
+  order: content;
+  align-items: center;
+  position: relative;
+  /* Declaro grid*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  border: 2px #a18585;
+}
+
+.section-2 img {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border: 6px solid brown;
+  position: left;
+  width: 148%;
+  height: 95%;
+}
+
+.section-2 .calidad {
+  color: #3c7c7c;
+  font-size: 17px;
+  font-style: italic;
+  text-align: left;
+  list-style-type: armenian;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-60%, -60%);
+}
+
+.calidad-1 {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border: 6px;
+  position: right;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  order: content;
+  align-items: center;
+  text-align: center;
+}
+
+.section-3 div {
+  background-size: 100%;
+  align-items: center;
+  font-style: italic;
+  list-style-type: armenian;
+  font-weight: bold;
+  /* Declaro flexbox */
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-3 a {
+  color: indigo;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 4%;
+}
+
+.section-3 {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  word-spacing: normal;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.promo {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.promo {
+  background-color: burlywood;
+  word-spacing: 0%;
+  border: black solid;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* Animación */
+.promo:hover {
+  animation: patina-color 6s;
+}
+
+@keyframes patina-color {
+  0% {
+    background-color: crimson;
+  }
+  15% {
+    border-radius: 50%;
+  }
+  30% {
+    width: 500px;
+  }
+  60% {
+    background-color: darkturquoise;
+  }
+  100% {
+    background-color: gold;
+  }
+}
+.semillas {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  list-style-position: left;
+  list-style-type: circle;
+}
+
+.semillas {
+  background-color: burlywood;
+  word-spacing: 0%;
+  border: black solid;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px;
+  height: 20%;
+  width: 20%;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.boton-3 div h4 {
+  color: blue;
+  font-style: italic;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Declaro grid  */
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 20px;
+}
+
+.section-2 div img {
+  justify-self: stretch;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header header header header header header header" "Section-0" "section-1 section-1 " "section-2 section-2 section-2 section-2" "section-3 section-3" "footer footer footer footer footer footer";
+}
+
+/* Pseudo clase */
+.boton-2:active {
+  background-color: darkgreen;
+}
+
+/* Pseudo clase */
+.boton-1:hover {
+  background-color: blue;
+  color: aliceblue;
+  padding: 25px;
+}
+
+/* Position */
+.boton-1 {
+  position: sticky;
+  top: 0;
+}
+
+.boton-2 {
+  position: sticky;
+  top: 20px;
+  left: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section-2 {
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  /* Declaro flexbox */
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+/*Botstrap  */
+.dropdown-menu {
+  background-color: burlywood;
+  text-decoration: none;
+}
+
+.container {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.container div img {
+  justify-self: stretch;
+  position: absolute;
+}
+
+/* Este es footer */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer {
+  width: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  font-size: 20px;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: flex-start;
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer section div p h3 {
+  color: #2e2446;
+  text-align: left;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+footer div ul li {
+  color: #480488;
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-7 p h3 {
+  background-color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: none;
+  word-spacing: normal;
+  font-weight: bold;
+  text-align: end;
+  color: black;
+  display: flex;
+  flex-wrap: content;
+}
+
+.footer-7 {
+  display: flex;
+  order: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
