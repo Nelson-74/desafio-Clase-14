@@ -126,21 +126,6 @@ body {
     margin: 20px auto;  
     border-radius: 2px;   
 }
-.mi1 {
-    background-color: greenyellow;
-    transition: all 1.5s ease-in ;
-}
-.mi2 {
-    background-color: darkblue;
-    transition: all 1.5s ease-in-out ;
-}
-.contener h2 {
-    background-color: darkgray;
-    transition: all 1.5s ease-out ;
-}
-.contener:hover h2, .contener:hover .mi1, .contener:hover .mi2 {
-    transform:translateX(80px) ;
-}
 .estación {
     background-color:rgb(228, 245, 155);
     word-spacing:0%;

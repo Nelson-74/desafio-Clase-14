@@ -1,4 +1,5 @@
 @import"../base/colors";
+//selector-universal
 * {
     margin: 0px;
     padding: 0px;
@@ -15,41 +16,50 @@
 /* Header */
 #header{
      //Mixin
-    @include container(10vh, 100%, fixed, flex, row,space-around );
+    @include container(10%, 100%, fixed, flex, row,space-around );
     top:0;
-    padding: 19px; 
+    text-align: right;
+    padding: 1.2em 0; 
     width: 2em;
-    border: 1px solid nth($colores, 3);
+    border: .2em solid nth($colores, 3);
     background-position: top;
-    margin-left: 5px;
+    margin-left: .4em;
     display: inline-block;
     display: grid;
-    grid-template-columns: 66px 66px 66px 66px 66px 66px 66px 66px ;
+    grid-template-columns:4em 4em 4em 4em 4em 4em 4em 4em 4em ;
 }
 .logo-nav {
+    position: top;
     width: 2em;
-    height: 150px;
-    padding: 15px;
-    border: 10 px;
+    height: 9em;
+    padding: 1em;
+    border: .7em;
     display: flex;
     justify-content: space-around;
     margin-left: 3em;
     flex-direction:row;
     display:inline-block;
+
 }
 .menuNav {
+    text-align: right;
     display: flex;
     justify-content: space-around;
-    margin-left: 1,5em;
+    margin-left: 18em;
     flex-direction:row ;
-  
+    justify-content: space-around;
 }
 .menuNav li {
-    padding: 10px;
-    border-radius: 6px;
+    position: top;
+    padding: .8em;
+    margin: 0 auto;
+    border-radius: .4em;
     text-align: center;
-    padding-left: 2px;
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: .2em;
     list-style-position: inside;
+    
 }
 .menuNav li:hover {
     background-color:$color-hover;
@@ -59,13 +69,15 @@
 .menuNav li a {
     text-decoration: none;
     color: #191A19;
-    font-size: 15px;
+    font-size: 1rem;
+    margin: 0 auto;
     font-family:$fonts;
     font-style: italic;
     display: flex;
     justify-content: space-around;
 }
 .miHeader {
+    margin: 1em;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
