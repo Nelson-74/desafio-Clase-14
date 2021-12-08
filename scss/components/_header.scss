@@ -28,38 +28,26 @@
     display: grid;
     grid-template-columns:4em 4em 4em 4em 4em 4em 4em 4em 4em ;
 }
-.logo-nav {
-    position: top;
-    width: 2em;
-    height: 9em;
-    padding: 1em;
-    border: .7em;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 3em;
-    flex-direction:row;
-    display:inline-block;
 
-}
 .menuNav {
     text-align: right;
     display: flex;
-    justify-content: space-around;
-    margin-left: 18em;
+    margin-left: .2em;
     flex-direction:row ;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 .menuNav li {
     position: top;
-    padding: .8em;
-    margin: 0 auto;
+    padding: 1em;
+    margin: 0.4em;
     border-radius: .4em;
     text-align: center;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction: row-reverse;
     padding-left: .2em;
     list-style-position: inside;
-    
+    justify-content: flex-end;
+    align-content: space-around;
 }
 .menuNav li:hover {
     background-color:$color-hover;
@@ -75,6 +63,7 @@
     font-style: italic;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
 }
 .miHeader {
     margin: 1em;
