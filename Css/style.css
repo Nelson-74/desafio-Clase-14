@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .cuerpo-1 {
   width: 100%;
 }
@@ -216,12 +221,6 @@ body {
   margin: 20px auto;
   transition: all 2s;
 }
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 /* Header */
 #header {
   height: 10%;
@@ -230,24 +229,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: #F3F0D7;
+  font-size: 0.5rem;
   top: 0;
-  text-align: right;
+  text-align: left;
   padding: 1.2em 0;
-  width: 2em;
+  width: 1em;
   border: 0.2em solid blue;
   background-position: top;
   margin-left: 0.4em;
+  align-content: space-around;
   display: inline-block;
   display: grid;
-  grid-template-columns: 4em 4em 4em 4em 4em 4em 4em 4em 4em;
+  grid-template-columns: 3em 3em 3em 3em 3em 3em 3em 3em 3em;
 }
 
 .menuNav {
   text-align: right;
   display: flex;
   margin-left: 0.2em;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .menuNav li {
@@ -257,7 +258,6 @@ body {
   border-radius: 0.4em;
   text-align: center;
   display: flex;
-  flex-direction: row-reverse;
   padding-left: 0.2em;
   list-style-position: inside;
   justify-content: flex-end;
@@ -265,9 +265,9 @@ body {
 }
 
 .menuNav li:hover {
-  background-color: #B000B9;
+  background-color: #f1a7f5;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .menuNav li a {
@@ -279,7 +279,15 @@ body {
   font-style: italic;
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+}
+
+.logo-nav {
+  position: top;
+  width: 2em;
+  height: 9em;
+  padding: 1em;
+  border: 0.7em;
+  display: flex;
 }
 
 .miHeader {
@@ -288,19 +296,12 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 /* Esta es la segunda sección  */
 /*Carrusel de Boostrap*/
 .tales {
   width: 100%;
   height: 100%;
 }
-
 .carousel-inner {
   width: 100%;
   max-height: 800px;
@@ -342,41 +343,47 @@ body {
   /* declaro flexbox */
   display: flex;
   justify-content: space-around;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .boton-1 {
-  padding: 0.8em;
+  padding: 1em;
   border: 0.2em solid black;
-  border-radius: 15px;
+  border-radius: 1rem;
   background-color: burlywood;
   color: blue;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: none;
   margin: 0.4em;
   text-align: center;
   font-weight: bold;
+  display: flex;
 }
 
 .boton-2 {
-  padding: 0.8em;
+  padding: 1em;
   border: 0.2em solid black;
-  border-radius: 15px;
+  border-radius: 1rem;
   background-color: burlywood;
   color: blue;
-  font-size: 15px;
+  font-size: 1rem;
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0.4em;
   text-transform: none;
   word-spacing: normal;
   font-weight: bold;
+  display: flex;
+  align-content: flex-end;
 }
 
 /*Esta es la cuarta sección*/
 .section-2 {
-  padding: 10px;
+  padding: 0.7em;
   border-radius: 0.5em;
   border: 1px solid black;
   color: blue;
@@ -429,7 +436,7 @@ body {
 .calidad-1 {
   padding: 0.8em 0.8em 0.8em 0.8em;
   border-radius: 0.8em;
-  border: 6px;
+  border: 0.2em;
   position: right;
   width: 100%;
   height: 100%;
@@ -470,7 +477,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 20px;
+  gap: 1.4em;
 }
 
 .promo {
@@ -516,7 +523,7 @@ body {
   border: black solid;
   font-weight: bold;
   text-align: left;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   height: 20%;
   width: 20%;
   padding: 0.8em;
@@ -565,6 +572,7 @@ body {
 .boton-1 {
   position: sticky;
   top: 0;
+  display: flex;
 }
 
 .boton-2 {
@@ -573,7 +581,6 @@ body {
   left: 2em;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .section-2 {

@@ -17,24 +17,26 @@
 #header{
      //Mixin
     @include container(10%, 100%, fixed, flex, row,space-around );
+    background-color:#F3F0D7;
+    font-size: 0.5rem;
     top:0;
-    text-align: right;
+    text-align: left;
     padding: 1.2em 0; 
-    width: 2em;
+    width: 1em;
     border: .2em solid nth($colores, 3);
     background-position: top;
     margin-left: .4em;
+    align-content: space-around;
     display: inline-block;
     display: grid;
-    grid-template-columns:4em 4em 4em 4em 4em 4em 4em 4em 4em ;
+    grid-template-columns:3em 3em 3em 3em 3em 3em 3em 3em 3em ;
 }
 
 .menuNav {
     text-align: right;
     display: flex;
     margin-left: .2em;
-    flex-direction:row ;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .menuNav li {
     position: top;
@@ -43,7 +45,6 @@
     border-radius: .4em;
     text-align: center;
     display:flex;
-    flex-direction: row-reverse;
     padding-left: .2em;
     list-style-position: inside;
     justify-content: flex-end;
@@ -63,8 +64,15 @@
     font-style: italic;
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
 }
+.logo-nav {
+    position: top;
+    width: 2em;
+    height: 9em;
+    padding: 1em;
+    border: 0.7em;
+    display: flex;
+} 
 .miHeader {
     margin: 1em;
     display: grid;
