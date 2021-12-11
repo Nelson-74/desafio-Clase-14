@@ -33,10 +33,10 @@
     width: 100%;
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    display: block !important;
+    display: block ;
 }
 .carousel-item img{
-    max-height: 450px;
+    max-height: 28rem;
 }   
 @media (max-width: 688px) {
     .carousel-item img {
@@ -54,12 +54,14 @@
 
 /* Esta es la tercer sección */
 .section-1 {
+    @include boton(5em,.2em solid black, 1rem,burlywood, blue, 1em, italic);
 /* declaro flexbox */
     display: flex;
     justify-content: space-around;
     display: inline-block;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .boton-1 {
     //Mixin
@@ -69,7 +71,10 @@
     margin: .4em;
     text-align: center;
     font-weight: bold;
-    display: flex
+    display: grid;
+    justify-self: end;
+    align-self: start;
+    grid-column: 1/2;
 }
 .boton-2 {
      //Mixin
@@ -79,8 +84,10 @@
     text-transform: none;
     word-spacing: normal;
     font-weight: bold; 
-    display: flex;
-    align-content: flex-end;
+    display: grid;
+    justify-self: start;
+    align-self: start;
+    grid-column: 3/4;
 }
 
 /*Esta es la cuarta sección*/
@@ -113,7 +120,7 @@
 }
 .section-2 img {
     padding: .8em .8em .8em .8em  ;
-    border-radius: .8em ;
+    border-radius: .2em ;
     border: .6em solid nth($colores , 4);
     position: left;
     width: 148%;

@@ -16,9 +16,9 @@
 /* Header */
 #header{
      //Mixin
-    @include container(10%, 100%, fixed, flex, row,space-around );
-    background-color:#F3F0D7;
+    @include container(1em, 100%, fixed, flex, row,space-around );
     font-size: 0.5rem;
+    background-color:nth($colores, 2 );
     top:0;
     text-align: left;
     padding: 1.2em 0; 
@@ -28,8 +28,6 @@
     margin-left: .4em;
     align-content: space-around;
     display: inline-block;
-    display: grid;
-    grid-template-columns:3em 3em 3em 3em 3em 3em 3em 3em 3em ;
 }
 
 .menuNav {
@@ -64,11 +62,14 @@
     font-style: italic;
     display: flex;
     justify-content: space-around;
+    display: grid;
+    justify-self: end;
+    align-self: center;
 }
 .logo-nav {
     position: top;
-    width: 2em;
-    height: 9em;
+    width: 1em;
+    height: 6em;
     padding: 1em;
     border: 0.7em;
     display: flex;
@@ -78,4 +79,6 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: .5rem;
+
 }
