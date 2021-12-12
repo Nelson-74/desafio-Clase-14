@@ -1,4 +1,5 @@
 @import"../base/colors";
+@import"../base/variables";
 //selector-universal
 * {
     margin: 0px;
@@ -18,23 +19,24 @@
      //Mixin
     @include container(1em, 100%, fixed, flex, row,space-around );
     font-size: 0.5rem;
-    background-color:nth($colores, 2 );
+    background-color:nth($colores, 8);
     top:0;
-    text-align: left;
+    text-align: right;
     padding: 1.2em 0; 
     width: 1em;
     border: .2em solid nth($colores, 3);
     background-position: top;
-    margin-left: .4em;
+    margin-left: 1em;
     align-content: space-around;
-    display: inline-block;
+    display: block;
 }
 
 .menuNav {
     text-align: right;
     display: flex;
-    margin-left: .2em;
+    margin-left: 1em;
     justify-content: space-around;
+    
 }
 .menuNav li {
     position: top;
@@ -43,7 +45,7 @@
     border-radius: .4em;
     text-align: center;
     display:flex;
-    padding-left: .2em;
+    padding-left: .4em;
     list-style-position: inside;
     justify-content: flex-end;
     align-content: space-around;
@@ -53,25 +55,26 @@
     color:$color-font-hover;
     font-size: $size;
 }
-.menuNav li a {
+/*.menuNav li a {
     text-decoration: none;
     color: #191A19;
     font-size: 1rem;
     margin: 0 auto;
     font-family:$fonts;
     font-style: italic;
+    border-radius: .2em solid navy;
     display: flex;
     justify-content: space-around;
     display: grid;
     justify-self: end;
     align-self: center;
-}
+}*/
 .logo-nav {
     position: top;
     width: 1em;
     height: 6em;
     padding: 1em;
-    border: 0.7em;
+    border-radius: .2em solid navy;
     display: flex;
 } 
 .miHeader {
@@ -79,6 +82,5 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    gap: .5rem;
-
+    gap: 1rem;
 }
