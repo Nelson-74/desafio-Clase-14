@@ -17,7 +17,7 @@
 /* Header */
 #header{
      //Mixin
-    @include container(1em, 100%, fixed, flex, row,space-around );
+    @include container(3em, 3em, fixed, flex, row,flex-end );
     font-size: 0.5rem;
     background-color:nth($colores, 8);
     top:0;
@@ -26,49 +26,57 @@
     width: 1em;
     border: .2em solid nth($colores, 3);
     background-position: top;
-    margin-left: 1em;
-    align-content: space-around;
-    display: block;
+    margin: 1em;
+    align-content: flex-end;
+    display: inline-block;
+    .miHeader {
+        margin: 1em;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 1rem;
+    }
 }
 
 .menuNav {
     text-align: right;
     display: flex;
     margin-left: 1em;
-    justify-content: space-around;
-    
-}
-.menuNav li {
-    position: top;
-    padding: 1em;
-    margin: 0.4em;
-    border-radius: .4em;
-    text-align: center;
-    display:flex;
-    padding-left: .4em;
-    list-style-position: inside;
     justify-content: flex-end;
-    align-content: space-around;
+    flex-direction: row;
+    li {
+        position: relative;
+        padding: 1em;
+        margin: 0.4em;
+        border-radius: .4em;
+        text-align: center;
+        display:flex;
+        padding-left: .4em;
+        list-style-position: inside;
+        justify-content: flex-end;
+        a {
+            text-decoration: none;
+            color: #191A19;
+            font-size: 1rem;
+            margin: 0 auto;
+            font-family:$fonts;
+            font-style: italic;
+            border-radius: .2em solid navy;
+            display: flex;
+            justify-content: flex-end;
+            display: grid;
+            justify-self: end;
+            align-self: center;
+        }
+    }
 }
+
 .menuNav li:hover {
     background-color:$color-hover;
     color:$color-font-hover;
     font-size: $size;
 }
-/*.menuNav li a {
-    text-decoration: none;
-    color: #191A19;
-    font-size: 1rem;
-    margin: 0 auto;
-    font-family:$fonts;
-    font-style: italic;
-    border-radius: .2em solid navy;
-    display: flex;
-    justify-content: space-around;
-    display: grid;
-    justify-self: end;
-    align-self: center;
-}*/
+
 .logo-nav {
     position: top;
     width: 1em;
@@ -77,10 +85,3 @@
     border-radius: .2em solid navy;
     display: flex;
 } 
-.miHeader {
-    margin: 1em;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    gap: 1rem;
-}
