@@ -618,8 +618,10 @@ body {
   font-weight: bold;
   text-align: center;
   border-radius: 4px;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
   padding: 150px;
   margin: 20px auto;
   color: blue;
@@ -628,33 +630,87 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   word-spacing: normal;
   font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.cuerpo ul li h3 {
-  color: blue;
-  font-size: 20px;
-  font-style: italic;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
+.cuerpo ul {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "cuerpo-1 cuerpo-2" "cuerpo-3" "cuerpo-4";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2em;
 }
-
-.cuerpo img {
-  width: 8em;
+.cuerpo ul .cuerpo-1 {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+.cuerpo ul .cuerpo-2 {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+.cuerpo ul .cuerpo-3 {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.cuerpo ul .cuerpo-4 {
+  display: flex;
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+}
+.cuerpo ul img {
+  width: 200px;
+  height: 180px;
   margin: 2px;
   align-items: center;
 }
-
-.cuerpo h3 {
-  text-align: justify;
-  font-size: 1.7em;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.card {
-  border: radius 2px;
+.cuerpo ul .card {
+  width: 330px;
+  height: 430px;
+  overflow: hidden;
+  border: radius 8px;
   background-color: #FFEEBB;
-  box-shadow: 0, 0.1rem, 2rem, rgba(0, 0, 0, 0.12);
+  box-shadow: 0, 0.2rem, 0.2rem, rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.cuerpo ul h3 {
+  text-align: center;
+  font-weight: 100;
+  color: blue;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.cuerpo ul iframe {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .congelar1, .congelar2, .congelar3, .congelar4 {
