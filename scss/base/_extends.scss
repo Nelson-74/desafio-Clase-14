@@ -1,62 +1,31 @@
 //Extends
 //Placeholder %
 %touch {
-    background-color: burlywood;
-  word-spacing: 0%;
-  border: black;
-  font-weight: bold;
-  text-align: left;
-  border-radius: 6px;
-  height: 20%;
-  width: 20%;
-  padding: 2.5em;
-  margin: 20px 20px;
-  color: blue;
-  font-size: 1.6rem;
-  font-style: italic;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  word-spacing: normal;
-  font-weight: bold;
-  list-style-position: left;
-  list-style-type: circle;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: auto;
-  align-items: left;
-}
-%track{
-    color: blue;
-    font-size: 1.6rem;
-    font-style: italic;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color:nth($colores, 3);
+    font-size : 2rem;
+    font-style :italic;
+    font-family:$fonts;
     text-transform: none;
     word-spacing: normal;
     font-weight: bold;
-    align-items: center;
-    list-style-position: left;
-    list-style-type: circle;
+    border-radius: 2px;
+    list-style-position:left; 
 }
-.congelar{
-    background-color:burlywood;
-    @extend %touch;
+%track{
+    background-color:nth($colores , 2);
+    word-spacing:0%;
+    border: nth($colores , 1) solid ;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 6px ;
+    height: 20%;
+    width: 20%;
+    padding: 2em;
+    margin: .2em auto; 
 }
-.cuerpo{
-    border: black;
-    @extend %touch;
+.contener {
+    @extend %touch;  
+    .mi1 ,.mi2, .contener h2 {
+    @extend %track;  
+    }
 }
-.estacion {
-    @extend %touch;
-
-}
-.promo {
-    @extend %touch;
-}
-.estacion-1 , .estacion-2, .estacion-3 {
-    @extend %track;
-}
-.promo-1 , .promo-2, .promo-3, .promo-4 {
-    @extend %track;
-}
-
-
