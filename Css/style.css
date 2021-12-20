@@ -187,7 +187,7 @@
   justify-content: space-around;
   display: inline-block;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   order: content;
 }
@@ -231,7 +231,7 @@
 /*Esta es la cuarta sección*/
 .section-2 {
   padding: 0.7em;
-  border-radius: 0.5em;
+  border-radius: 0.8em;
   border: 1px solid black;
   color: blue;
   font-size: 1.5rem;
@@ -248,20 +248,20 @@
   justify-content: space-around;
   order: content;
   align-items: center;
-  position: relative;
   /* Declaro grid*/
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-template-rows: 1fr;
   gap: 0.4em;
   border: 0.2em, rgb 161, 133, 133;
 }
 .section-2 img {
-  padding: 0.8em 0.8em 0.8em 0.8em;
+  margin: 1rem auto;
+  padding: 0.1em;
   border-radius: 0.2em;
-  border: 0.6em solid brown;
+  border: 0.1em solid brown;
   position: left;
-  width: 148%;
+  width: 140%;
   height: 95%;
   justify-self: stretch;
 }
@@ -274,13 +274,13 @@
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 10%;
+  left: 10%;
   transform: translate(-60%, -60%);
 }
 .section-2 .calidad-1 {
-  padding: 0.8em 0.8em 0.8em 0.8em;
-  border-radius: 0.8em;
+  padding: 1em;
+  border-radius: 1em;
   border: 0.2em;
   position: right;
   width: 100%;

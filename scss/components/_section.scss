@@ -60,7 +60,7 @@
     justify-content: space-around;
     display: inline-block;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     order: content;
     .boton-2 {
@@ -93,7 +93,7 @@
 /*Esta es la cuarta sección*/
 .section-2 {
     padding: .7em;
-    border-radius: .5em ;
+    border-radius: .8em ;
     border: 1px solid nth($colores , 1);
     color: nth($colores , 3);
     font-size : 1.5rem;
@@ -110,19 +110,19 @@
     justify-content: space-around;
     order:content;
     align-items: center;
-    position: relative;
 /* Declaro grid*/  
     display:grid;
-    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-columns: repeat(2, 2fr) ;
     grid-template-rows: 1fr  ;
     gap: .4em;
     border: .2em, rgb (161, 133, 133);
     img {
-    padding: .8em .8em .8em .8em  ;
+    margin: 1rem auto;
+    padding: .1em ;
     border-radius: .2em ;
-    border: .6em solid nth($colores , 4);
+    border: .1em solid nth($colores , 4);
     position: left;
-    width: 148%;
+    width: 140%;
     height: 95%;
     justify-self: stretch;
     }
@@ -135,13 +135,13 @@
         font-weight: bold;
         font-family:$fonts;
         position: absolute;
-        top: 40%;
-        left: 25%;
+        top: 10%;
+        left: 10%;
         transform: translate(-60%, -60%);
     }
     .calidad-1 {
-        padding: .8em .8em .8em .8em  ;
-        border-radius: .8em ;
+        padding: 1em;
+        border-radius: 1em ;
         border: .2em;
         position: right;
         width: 100%;
